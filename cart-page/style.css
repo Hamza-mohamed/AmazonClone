@@ -1,0 +1,72 @@
+body {
+    box-sizing: border-box;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+.deselect {
+    color: #007185;
+}
+.deselect:hover {
+    text-decoration: underline !important;
+    color: red;
+}
+hr {
+    margin: 0 !important;
+}
+
+.stock {
+    font-size: 12px;
+    color: #b12704;
+    margin-bottom: 4px;
+    line-height: 1.2;
+}
+.delivery {
+    font-size: 12px;
+    color: #565959;
+    margin-bottom: 4px;
+}
+.price {
+    font-weight: bold;
+}
+.list li a {
+    color: #565959;
+    font-size: 12px;
+}
+.list li:not(:first-child) {
+    padding-left: 16px;
+    border-left: 1px solid #ddd;
+    margin-left: 10px;
+}
+.form-select {
+    height: 24px;
+    padding: 0px 32px 0 10px;
+    font-size: 16px;
+    background-color: #dddddd80;
+}
+.total-cart ion-icon {
+    color: #067d62;
+}
+.total-cart {
+    font-size: 12px;
+    padding: 5px;
+    font-weight: 500;
+    color: #565959;
+}
+.total-price {
+    font-size: 18px;
+}
+span.price {
+    font-weight: bold;
+    font-size: 18px;
+}
+.to-buy {
+    background-color: #ffd814;
+    color: #000;
+    padding: 8px 16px;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+    border-radius: 12px;
+}
