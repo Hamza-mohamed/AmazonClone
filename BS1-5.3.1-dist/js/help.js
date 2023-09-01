@@ -26,7 +26,7 @@ but3.addEventListener("click", function () {
         "You can find tracking information in your order details. If an order includes multiple items, each may have separate delivery dates and tracking."
     document.getElementById("head2").innerHTML = "Find a missing package that shows As delivered";
     document.getElementById("para2").innerHTML =
-        "If your tracking information shows that your package was delivered, but you haven't yet received it, wait until the end of the day. Some couriers may deliver until 10pm."
+    "You can find tracking information in your order details. If an order includes multiple items, each may have separate delivery dates and tracking."
     document.getElementById("head3").innerHTML = "Undeliverable Packages";
     document.getElementById("para3").innerHTML =
         " Occasionally, packages are returned to us as undeliverable."
