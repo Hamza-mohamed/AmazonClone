@@ -84,23 +84,29 @@
 
 
 }
+#sec3 li:hover {
+    border: 1px solid none;
+    border-radius: 10px;
+    background-color: #d7d6d6;
+    text-align: left;
 
+
+}
 #sec3 li> button {
     border: none;
     color: rgb(0, 0, 0);
     font-weight: bolder;
     font-size: 16px;
     padding: 10px;
-    background-color: #F7FAFA;
+    background-color: inherit;
 
 }
 
-#sec3 li> button:hover {
+#sec3 li:active {
     border: 1px solid none;
     border-radius: 10px;
     background-color: #007185;
 }
-
 
 #sec3 p {
     font-size: 12px;
@@ -146,4 +152,25 @@
 .first2:hover{
     background-color: #dddddd;
 
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  
+	/* html{
+		font-size: 16px;
+	} */
+    #sec3 li{
+        border: none;
+
+    }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+	
 }
