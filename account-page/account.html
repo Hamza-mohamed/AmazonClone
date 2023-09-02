@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../Assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="../category-page/style.css" />
+        <link rel="stylesheet" href="./style.css" />
+        <title>Amazon - Cart</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../index.html"
+                        ><img
+                            src="../Assets/images/nav-images/amzon-logo.png"
+                            width="120px"
+                            height="40px"
+                    /></a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div
+                        class="collapse navbar-collapse"
+                        id="navbarNavDropdown"
+                    >
+                        <ul class="navbar-nav">
+                            <li class="nav-item location-item">
+                                <div class="d-flex">
+                                    <div class="mt-2 me-1">
+                                        <ion-icon
+                                            class="location"
+                                            name="location-outline"
+                                        ></ion-icon>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <p class="deliver">Deliver to</p>
+                                        <a
+                                            class="nav-link active address"
+                                            aria-current="page"
+                                            href="#"
+                                            >Egypt</a
+                                        >
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item search">
+                                <div class="container-fluid">
+                                    <form
+                                        class="d-flex align-items-md-center"
+                                        role="search"
+                                    >
+                                        <li
+                                            class="nav-item dropdown all-category-search"
+                                        >
+                                            <a
+                                                class="nav-link dropdown-toggle"
+                                                href="#"
+                                                role="button"
+                                                data-bs-toggle="dropdown"
+                                                aria-expanded="false"
+                                            >
+                                                All
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                        >All Category</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                        >Amazon Devices</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                        >Amazon Fashion</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                        >Amazon Warehouse</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                        >Baby</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                        >Books</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                        >Sports</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        class="dropdown-item"
+                                                        href="#"
+                                                        >Software</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <input
+                                            class="form-control me-2"
+                                            type="search"
+                                            placeholder="          Search"
+                                            aria-label="Search"
+                                        /><ion-icon
+                                            class="serch-icon"
+                                            name="search-outline"
+                                        ></ion-icon>
+                                    </form>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a
+                                    class="nav-link dropdown-toggle langugae-location"
+                                    href="#"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    <img
+                                        src="../Assets/images/nav-images/egypt.png"
+                                        width="25px"
+                                    />
+                                    EN
+                                </a>
+                                <ul class="dropdown-menu p-2">
+                                    <li>
+                                        <input
+                                            type="radio"
+                                            id="arabic"
+                                            name="languge"
+                                        />
+                                        <label for="arabic">العربية- AR</label>
+                                    </li>
+                                    <hr />
+                                    <li>
+                                        <input
+                                            type="radio"
+                                            id="english"
+                                            name="languge"
+                                        />
+                                        <label for="english"
+                                            >English - EN</label
+                                        >
+                                    </li>
+                                    <p>
+                                        <a href="#">Learn more</a>
+                                    </p>
+                                    <hr />
+                                    <p>
+                                        <img
+                                            src="../Assets/images/nav-images/egypt.png"
+                                            width="25px"
+                                        />
+                                        You are shopping on Amazon.eg
+                                    </p>
+                                    <p>
+                                        <a href="#">Change country/ region.</a>
+                                    </p>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown nav-account">
+                                <a
+                                    class="nav-link dropdown-toggle"
+                                    href="#"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    <span class="account-lists">
+                                        <span class="hello"
+                                            >Hello, sign in<br /></span
+                                        >Account & Lists
+                                    </span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a
+                                            class="dropdown-item"
+                                            href="./account.html"
+                                            >Account</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >Another action</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#"
+                                            >Something else here</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link order" href="#">Orders</a>
+                            </li>
+                            <li class="nav-item cart-container d-flex">
+                                <a href="../cart-page/cart.html">
+                                    <span>4</span>
+                                    <img
+                                        class="mb-2"
+                                        src="../Assets/images/nav-images/cart.png"
+                                    />
+                                    <a
+                                        href="../cart-page/cart.html"
+                                        class="nav-link cart"
+                                        >Cart</a
+                                    >
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="menu">
+                <ul class="list-unstyled d-flex flex-row">
+                    <li><a href="#">All</a></li>
+                    <li><a href="#">Today's Deals</a></li>
+                    <li><a href="#">Mobile Phones</a></li>
+                    <li><a href="#">Electronics</a></li>
+                    <li><a href="#">Application</a></li>
+                    <li><a href="#">Fashion</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Video Games</a></li>
+                    <li><a href="#">Toy & Games</a></li>
+                    <li><a href="#">Grocery</a></li>
+                    <li><a href="../help-page/help.html">Help</a></li>
+                </ul>
+            </div>
+        </header>
+        <main class="container-fluid">
+            <div class="row p-5 pt-3 w-100">
+                <h2>Your Account</h2>
+                <div class="col-lg-4 col-md-6 mt-4">
+                    <div class="d-flex flex-row ms-1 box p-2">
+                        <img
+                            class="w-25 me-3 mb-2"
+                            src="../Assets/images/Account-images/order._CB657847415_.png"
+                        />
+                        <div class="d-flex flex-column justify-content-center">
+                            <h5>Your Orders</h5>
+                            <p>
+                                Track, return, cancel an order, download invoice
+                                or buy again
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-4">
+                    <div class="d-flex flex-row ms-1 box p-2">
+                        <img
+                            class="w-25 me-3 mb-2"
+                            src="../Assets/images/Account-images/security._CB657836742_.png "
+                        />
+                        <div class="d-flex flex-column justify-content-center">
+                            <h5>Login & security</h5>
+                            <p>
+                                Manage password, email, mobile number, and
+                                security settings
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-4">
+                    <div class="d-flex flex-row ms-1 box p-2">
+                        <img
+                            class="me-3 mb-2"
+                            width="92px"
+                            height="92px"
+                            src="../Assets/images/Account-images/fshub_prime._CB608110998_.png "
+                        />
+                        <div class="d-flex flex-column justify-content-center">
+                            <h5>Login & security</h5>
+                            <p>
+                                Manage password, email, mobile number, and
+                                security settings
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-4">
+                    <div class="d-flex flex-row ms-1 box p-2">
+                        <img
+                            class="w-25 me-3 mb-2"
+                            src="../Assets/images/Account-images/gift_card._CB657847415_.png"
+                        />
+                        <div class="d-flex flex-column justify-content-center">
+                            <h5>Your Orders</h5>
+                            <p>
+                                Track, return, cancel an order, download invoice
+                                or buy again
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-4">
+                    <div class="d-flex flex-row ms-1 box p-2">
+                        <img
+                            class="w-25 me-3 mb-2"
+                            src="../Assets/images/Account-images/payment._CB657847415_.png"
+                        />
+                        <div class="d-flex flex-column justify-content-center">
+                            <h5>Your Orders</h5>
+                            <p>
+                                Track, return, cancel an order, download invoice
+                                or buy again
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-4">
+                    <div class="d-flex flex-row ms-1 box p-2">
+                        <img
+                            class="w-25 me-3 mb-2"
+                            src="../Assets/images/Account-images/YA_icon_Help_1._CB657836742_.png"
+                        />
+                        <div class="d-flex flex-column justify-content-center">
+                            <h5>Your Orders</h5>
+                            <p>
+                                Track, return, cancel an order, download invoice
+                                or buy again
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-4">
+                    <div class="d-flex flex-row ms-1 box p-2">
+                        <img
+                            class="w-25 me-3 mb-2"
+                            src="../Assets/images/Account-images/FS_Message_Centre._CB647329578_.png"
+                        />
+                        <div class="d-flex flex-column justify-content-center">
+                            <h5>Your Orders</h5>
+                            <p>
+                                Track, return, cancel an order, download invoice
+                                or buy again
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-4">
+                    <div class="d-flex flex-row ms-1 box p-2">
+                        <img
+                            class="w-25 me-3 mb-2"
+                            src="../Assets/images/Account-images/YA_icon_address_01._CB657836742_.png"
+                        />
+                        <div class="d-flex flex-column justify-content-center">
+                            <h5>Your Orders</h5>
+                            <p>
+                                Track, return, cancel an order, download invoice
+                                or buy again
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-4">
+                    <div class="d-flex flex-row ms-1 box p-2">
+                        <img
+                            class="w-25 me-3 mb-2"
+                            src="../Assets/images/Account-images/Gateway_icon_YA_Installment_Plan_01._CB628728316_.png"
+                        />
+                        <div class="d-flex flex-column justify-content-center">
+                            <h5>Your Orders</h5>
+                            <p>
+                                Track, return, cancel an order, download invoice
+                                or buy again
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-4">
+                    <div class="d-flex flex-row ms-1 box p-2">
+                        <img
+                            class="w-25 me-3 mb-2"
+                            src="../Assets/images/Account-images/mobileapp._CB668209870_.png"
+                        />
+                        <div class="d-flex flex-column justify-content-center">
+                            <h5>Your Orders</h5>
+                            <p>
+                                Track, return, cancel an order, download invoice
+                                or buy again
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-4">
+                    <div class="d-flex flex-row ms-1 box p-2">
+                        <img
+                            class="w-25 me-3 mb-2"
+                            src="../Assets/images/Account-images/11_lists._CB608110873_.png"
+                        />
+                        <div class="d-flex flex-column justify-content-center">
+                            <h5>Your Orders</h5>
+                            <p>
+                                Track, return, cancel an order, download invoice
+                                or buy again
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-4">
+                    <div class="d-flex flex-row ms-1 box p-2">
+                        <img
+                            class="w-25 me-3 mb-2"
+                            src="../Assets/images/Account-images/contact_us._CB665051409_.png"
+                        />
+                        <div class="d-flex flex-column justify-content-center">
+                            <h5>Your Orders</h5>
+                            <p>
+                                Track, return, cancel an order, download invoice
+                                or buy again
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr />
+        </main>
+        <section class="container-fluid some-links">
+            <div class="row p-5 pt-3 w-100 mt-2">
+                <div class="col-lg-4 col-md-6 mt-3">
+                    <div class="ms-1 box p-3">
+                        <p class="h5">Email alerts and messages</p>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Your Addresses</a></li>
+                            <li><a href="#">Your Addresses</a></li>
+                            <li><a href="#">Your Addresses</a></li>
+                            <li><a href="#">Your Addresses</a></li>
+                            <li><a href="#">Your Addresses</a></li>
+                            <li><a href="#">Your Addresses</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-3">
+                    <div class="ms-1 box p-3">
+                        <p class="h5">Email alerts and messages</p>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Your Addresses</a></li>
+                            <li><a href="#">Your Addresses</a></li>
+                            <li><a href="#">Your Addresses</a></li>
+                            <li><a href="#">Your Addresses</a></li>
+                            <li><a href="#">Your Addresses</a></li>
+                            <li><a href="#">Your Addresses</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-3">
+                    <div class="ms-1 box p-3">
+                        <p class="h5">Email alerts and messages</p>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Your Addresses</a></li>
+                            <li><a href="#">Your Addresses</a></li>
+                            <li><a href="#">Your Addresses</a></li>
+                            <li><a href="#">Your Addresses</a></li>
+                            <li><a href="#">Your Addresses</a></li>
+                            <li><a href="#">Your Addresses</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-3">
+                    <div class="ms-1 box p-3">
+                        <p class="h5">Email alerts and messages</p>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Your Addresses</a></li>
+                            <li><a href="#">Your Addresses</a></li>
+                            <li><a href="#">Your Addresses</a></li>
+                            <li><a href="#">Your Addresses</a></li>
+                            <li><a href="#">Your Addresses</a></li>
+                            <li><a href="#">Your Addresses</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-3">
+                    <div class="ms-1 box p-3">
+                        <p class="h5">Email alerts and messages</p>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Your Addresses</a></li>
+                            <li><a href="#">Your Addresses</a></li>
+                            <li><a href="#">Your Addresses</a></li>
+                            <li><a href="#">Your Addresses</a></li>
+                            <li><a href="#">Your Addresses</a></li>
+                            <li><a href="#">Your Addresses</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-3">
+                    <div class="ms-1 box p-3">
+                        <p class="h5">Email alerts and messages</p>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Your Addresses</a></li>
+                            <li><a href="#">Your Addresses</a></li>
+                            <li><a href="#">Your Addresses</a></li>
+                            <li><a href="#">Your Addresses</a></li>
+                            <li><a href="#">Your Addresses</a></li>
+                            <li><a href="#">Your Addresses</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr />
+        </section>
+        <script src="../Assets/js/bootstrap.bundle.min.js"></script>
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+        ></script>
+    </body>
+</html>
