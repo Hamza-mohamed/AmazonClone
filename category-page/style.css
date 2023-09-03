@@ -155,6 +155,10 @@
     font-weight: 500;
     font-size: 14px;
 }
+.navbar-collapse {
+    width: 100%;
+}
+
 @media screen and (max-width: 768px) {
     .menu {
         display: none;
