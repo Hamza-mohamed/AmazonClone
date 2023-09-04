@@ -1,3 +1,5 @@
+/*********Navbar****************/
+
 .location {
     font-size: 24px;
     color: #fff;
@@ -163,4 +165,21 @@
     .menu {
         display: none;
     }
+}
+/***********Navbar*********************/
+
+/**********category****************/
+.filter {
+    border-right: 1px solid #ccc;
+}
+
+.category-product img {
+    border-radius: 22px;
+}
+.img-container {
+    background-color: #dddddd2f;
+}
+.price {
+    font-weight: 500;
+    font-size: 24px;
 }
