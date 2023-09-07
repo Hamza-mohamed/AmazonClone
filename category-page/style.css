@@ -183,3 +183,7 @@
     font-weight: 500;
     font-size: 24px;
 }
+.flag-ships h2 {
+    color: rgb(111 62 198);
+    font-weight: bold;
+}
