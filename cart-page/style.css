@@ -32,18 +32,20 @@ hr {
 }
 .list li a {
     color: #565959;
-    font-size: 12px;
+    font-size: 10px;
 }
 .list li:not(:first-child) {
-    padding-left: 16px;
+    padding-left: 14px;
     border-left: 1px solid #ddd;
-    margin-left: 10px;
+    margin-left: 8px;
 }
 .form-select {
     height: 24px;
     padding: 0px 32px 0 10px;
-    font-size: 16px;
+    font-size: 14px;
     background-color: #dddddd80;
+    box-shadow: 0px 4px 10px 1px #1f111159;
+    width: 100%;
 }
 .total-cart ion-icon {
     color: #067d62;
@@ -69,4 +71,22 @@ span.price {
     width: 100%;
     text-align: center;
     border-radius: 12px;
+}
+.item input[type="checkbox"] {
+    accent-color: #007185;
+}
+
+.pair-title {
+    color: #007185;
+    line-height: 1;
+}
+
+.items-you-bought span {
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+.items-you-bought a {
+    color: #007185;
+    font-size: 12px;
 }

@@ -6,10 +6,12 @@
         <link rel="stylesheet" href="../Assets/css/bootstrap.min.css" />
         <link rel="stylesheet" href="../category-page/style.css" />
         <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="../orders/css/order.css" />
         <link rel="stylesheet" href="../footer/footerStyle.css" />
         <title>Amazon - Cart</title>
     </head>
     <body>
+        <!--///////////////////////////////////// <nav>////////////////////////////////////////// -->
         <header>
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
@@ -136,7 +138,8 @@
                                             type="search"
                                             placeholder="          Search"
                                             aria-label="Search"
-                                        /><ion-icon
+                                        />
+                                        <ion-icon
                                             class="serch-icon"
                                             name="search-outline"
                                         ></ion-icon>
@@ -216,28 +219,36 @@
                                         >
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#"
-                                            >Another action</a
+                                        <a
+                                            class="dropdown-item"
+                                            href="../login-page/login.html"
+                                            >Sign in</a
                                         >
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="#"
-                                            >Something else here</a
+                                        <a
+                                            class="dropdown-item"
+                                            href="../register-page/register.html"
+                                            >Register</a
                                         >
                                     </li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link order" href="#">Orders</a>
+                                <a class="nav-link order" href="../orders/order.html"
+                                >Orders</a
+                            >
                             </li>
                             <li class="nav-item cart-container d-flex">
-                                <a href="./cart.html">
+                                <a href="../cart-page/cart.html">
                                     <span>4</span>
                                     <img
                                         class="mb-2"
                                         src="../Assets/images/nav-images/cart.png"
                                     />
-                                    <a href="./cart.html" class="nav-link cart"
+                                    <a
+                                        href="../cart-page/cart.html"
+                                        class="nav-link cart"
                                         >Cart</a
                                     >
                                 </a>
@@ -250,7 +261,11 @@
                 <ul class="list-unstyled d-flex flex-row">
                     <li><a href="#">All</a></li>
                     <li><a href="#">Today's Deals</a></li>
-                    <li><a href="#">Mobile Phones</a></li>
+                    <li>
+                        <a href="../category-page/category.html"
+                            >Mobile Phones</a
+                        >
+                    </li>
                     <li><a href="#">Electronics</a></li>
                     <li><a href="#">Application</a></li>
                     <li><a href="#">Fashion</a></li>
@@ -262,9 +277,10 @@
                 </ul>
             </div>
         </header>
+        <!--/////////////////////////////////////<end nav>////////////////////////////////////////// -->
         <section class="container-fluid bg-light p-4">
             <div class="row">
-                <div class="col-md-9 bg-white p-5 pt-3">
+                <div class="col-md-8 bg-white p-5 pt-3 shadow">
                     <div class="head-cart mb-0">
                         <h3>Shopping Cart</h3>
                         <a href="#" class="deselect text-decoration-none"
@@ -276,7 +292,7 @@
                         <div
                             class="item col-md-3 col-sm-12 d-flex align-items-center"
                         >
-                            <div><input type="checkbox" /></div>
+                            <div><input type="checkbox" checked /></div>
                             <div class="mt-3 mb-3">
                                 <img
                                     class="w-100"
@@ -342,7 +358,7 @@
                         <div
                             class="item col-md-3 col-sm-12 d-flex align-items-center"
                         >
-                            <div><input type="checkbox" /></div>
+                            <div><input type="checkbox" checked /></div>
                             <div class="mt-3 mb-3">
                                 <img
                                     class="w-100"
@@ -408,7 +424,7 @@
                         <div
                             class="item col-md-3 col-sm-12 d-flex align-items-center"
                         >
-                            <div><input type="checkbox" /></div>
+                            <div><input type="checkbox" checked /></div>
                             <div class="mt-3 mb-3">
                                 <img
                                     class="w-100"
@@ -474,7 +490,7 @@
                         <div
                             class="item col-md-3 col-sm-12 d-flex align-items-center"
                         >
-                            <div><input type="checkbox" /></div>
+                            <div><input type="checkbox" checked /></div>
                             <div class="mt-3 mb-3">
                                 <img
                                     class="w-100"
@@ -537,24 +553,899 @@
                     </div>
                     <hr />
                 </div>
-                <div class="col-md-3 bg-white p-5 pt-3">
-                    <p class="total-cart">
-                        <ion-icon name="checkmark-circle"></ion-icon> Your order
-                        qualifies for FREE Shipping Choose this option at
-                        checkout. <a href="#">See details</a>
-                    </p>
 
-                    <p class="total-price">
-                        Subtotal (4 items) :
-                        <span class="price"> EGP 108,000.00</span>
-                    </p>
-                    <a
-                        href="#"
-                        class="to-buy d-inline-block text-decoration-none"
-                        >Proced to buy</a
-                    >
+                <div class="col-md-3 p-0 mx-md-4 my-2 my-md-0">
+                    <div class="shadow p-3 bg-white mb-2">
+                        <p class="total-cart">
+                            <ion-icon name="checkmark-circle"></ion-icon> Your
+                            order qualifies for FREE Shipping Choose this option
+                            at checkout. <a href="#">See details</a>
+                        </p>
+
+                        <p class="total-price">
+                            Subtotal (4 items) :
+                            <span class="price"> EGP 108,000.00</span>
+                        </p>
+                        <a
+                            href="#"
+                            class="to-buy d-inline-block text-decoration-none"
+                            >Proced to buy</a
+                        >
+                    </div>
+
+                    <div class="shadow p-3 bg-white">
+                        <h5><strong>Pair with your cart</strong></h5>
+                        <div class="row mt-4">
+                            <div class="col-md-4 mt-3">
+                                <img
+                                    class="w-100 mt-3"
+                                    width="100px"
+                                    src="https://m.media-amazon.com/images/I/81Gphn97m9L._AC_SL1500_.jpg"
+                                />
+                            </div>
+                            <div class="col-8">
+                                <div>
+                                    <p class="m-0 pair-title">
+                                        Lorem ipsum dolor sit amet consectetur.
+                                    </p>
+                                    <p
+                                        class="m-0"
+                                        style="
+                                            color: rgb(194, 118, 19);
+                                            font-weight: 500;
+                                        "
+                                    >
+                                        EGP 28,999.00
+                                    </p>
+                                    <i
+                                        class="fa-solid fa-star"
+                                        style="color: orange"
+                                    ></i>
+                                    <i
+                                        class="fa-solid fa-star"
+                                        style="color: orange"
+                                    ></i>
+                                    <i
+                                        class="fa-solid fa-star"
+                                        style="color: orange"
+                                    ></i>
+                                    <i
+                                        class="fa-solid fa-star"
+                                        style="color: orange"
+                                    ></i>
+                                    <i
+                                        class="fa-regular fa-star"
+                                        style="color: rgb(255, 123, 0)"
+                                    ></i>
+                                    <span>555</span>
+                                    <a
+                                        href="#"
+                                        class="to-buy d-block text-decoration-none mt-1 w-50 rounded-5 w-sm-100"
+                                        style="font-size: 12px"
+                                        >Add to Cart</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-md-4 mt-3">
+                                <img
+                                    class="w-100 mt-3"
+                                    width="100px"
+                                    src="https://m.media-amazon.com/images/I/81Gphn97m9L._AC_SL1500_.jpg"
+                                />
+                            </div>
+                            <div class="col-8">
+                                <div>
+                                    <p class="m-0 pair-title">
+                                        Lorem ipsum dolor sit amet consectetur.
+                                    </p>
+                                    <p
+                                        class="m-0"
+                                        style="
+                                            color: rgb(194, 118, 19);
+                                            font-weight: 500;
+                                        "
+                                    >
+                                        EGP 28,999.00
+                                    </p>
+                                    <i
+                                        class="fa-solid fa-star"
+                                        style="color: orange"
+                                    ></i>
+                                    <i
+                                        class="fa-solid fa-star"
+                                        style="color: orange"
+                                    ></i>
+                                    <i
+                                        class="fa-solid fa-star"
+                                        style="color: orange"
+                                    ></i>
+                                    <i
+                                        class="fa-solid fa-star"
+                                        style="color: orange"
+                                    ></i>
+                                    <i
+                                        class="fa-regular fa-star"
+                                        style="color: rgb(255, 123, 0)"
+                                    ></i>
+                                    <span>555</span>
+                                    <a
+                                        href="#"
+                                        class="to-buy d-block text-decoration-none mt-1 w-50 rounded-5 w-sm-100"
+                                        style="font-size: 12px"
+                                        >Add to Cart</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-md-4 mt-3">
+                                <img
+                                    class="w-100 mt-3"
+                                    width="100px"
+                                    src="https://m.media-amazon.com/images/I/81Gphn97m9L._AC_SL1500_.jpg"
+                                />
+                            </div>
+                            <div class="col-8">
+                                <div>
+                                    <p class="m-0 pair-title">
+                                        Lorem ipsum dolor sit amet consectetur.
+                                    </p>
+                                    <p
+                                        class="m-0"
+                                        style="
+                                            color: rgb(194, 118, 19);
+                                            font-weight: 500;
+                                        "
+                                    >
+                                        EGP 28,999.00
+                                    </p>
+                                    <i
+                                        class="fa-solid fa-star"
+                                        style="color: orange"
+                                    ></i>
+                                    <i
+                                        class="fa-solid fa-star"
+                                        style="color: orange"
+                                    ></i>
+                                    <i
+                                        class="fa-solid fa-star"
+                                        style="color: orange"
+                                    ></i>
+                                    <i
+                                        class="fa-solid fa-star"
+                                        style="color: orange"
+                                    ></i>
+                                    <i
+                                        class="fa-regular fa-star"
+                                        style="color: rgb(255, 123, 0)"
+                                    ></i>
+                                    <span>555</span>
+                                    <a
+                                        href="#"
+                                        class="to-buy d-block text-decoration-none mt-1 w-50 rounded-5 w-sm-100"
+                                        style="font-size: 12px"
+                                        >Add to Cart</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-md-4 mt-3">
+                                <img
+                                    class="w-100 mt-3"
+                                    width="100px"
+                                    src="https://m.media-amazon.com/images/I/81Gphn97m9L._AC_SL1500_.jpg"
+                                />
+                            </div>
+                            <div class="col-8">
+                                <div>
+                                    <p class="m-0 pair-title">
+                                        Lorem ipsum dolor sit amet consectetur.
+                                    </p>
+                                    <p
+                                        class="m-0"
+                                        style="
+                                            color: rgb(194, 118, 19);
+                                            font-weight: 500;
+                                        "
+                                    >
+                                        EGP 28,999.00
+                                    </p>
+                                    <i
+                                        class="fa-solid fa-star"
+                                        style="color: orange"
+                                    ></i>
+                                    <i
+                                        class="fa-solid fa-star"
+                                        style="color: orange"
+                                    ></i>
+                                    <i
+                                        class="fa-solid fa-star"
+                                        style="color: orange"
+                                    ></i>
+                                    <i
+                                        class="fa-solid fa-star"
+                                        style="color: orange"
+                                    ></i>
+                                    <i
+                                        class="fa-regular fa-star"
+                                        style="color: rgb(255, 123, 0)"
+                                    ></i>
+                                    <span>555</span>
+                                    <a
+                                        href="#"
+                                        class="to-buy d-block text-decoration-none mt-1 w-50 rounded-5 w-sm-100"
+                                        style="font-size: 12px"
+                                        >Add to Cart</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-md-4 mt-3">
+                                <img
+                                    class="w-100 mt-3"
+                                    width="100px"
+                                    src="https://m.media-amazon.com/images/I/81Gphn97m9L._AC_SL1500_.jpg"
+                                />
+                            </div>
+                            <div class="col-8">
+                                <div>
+                                    <p class="m-0 pair-title">
+                                        Lorem ipsum dolor sit amet consectetur.
+                                    </p>
+                                    <p
+                                        class="m-0"
+                                        style="
+                                            color: rgb(194, 118, 19);
+                                            font-weight: 500;
+                                        "
+                                    >
+                                        EGP 28,999.00
+                                    </p>
+                                    <i
+                                        class="fa-solid fa-star"
+                                        style="color: orange"
+                                    ></i>
+                                    <i
+                                        class="fa-solid fa-star"
+                                        style="color: orange"
+                                    ></i>
+                                    <i
+                                        class="fa-solid fa-star"
+                                        style="color: orange"
+                                    ></i>
+                                    <i
+                                        class="fa-solid fa-star"
+                                        style="color: orange"
+                                    ></i>
+                                    <i
+                                        class="fa-regular fa-star"
+                                        style="color: rgb(255, 123, 0)"
+                                    ></i>
+                                    <span>555</span>
+                                    <a
+                                        href="#"
+                                        class="to-buy d-block text-decoration-none mt-1 w-50 rounded-5 w-sm-100"
+                                        style="font-size: 12px"
+                                        >Add to Cart</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="col-md-8 bg-white my-3 p-5 pt-3 shadow items-you-bought"
+                >
+                    <h3 class="head-cart">Your items</h3>
+                    <div class="row">
+                        <div class="col-md-3 mx-2 col-sm-6 mt-2 border p-4">
+                            <img
+                                class="w-100 mb-2"
+                                src="https://m.media-amazon.com/images/I/81Gphn97m9L._AC_SL1500_.jpg"
+                            />
+                            <h6>
+                                DELL Vostro 3515 Laptop - Ryzen 5 3450U, 16GB
+                                RAM,…
+                            </h6>
+                            <span class="text-danger"
+                                >Currently unavailable.</span
+                            >
+                            <a href="#" class="d-block text-decoration-none"
+                                >Delete</a
+                            >
+                            <a href="#" class="d-block text-decoration-none"
+                                >Add to list</a
+                            >
+                        </div>
+                        <div class="col-md-3 mx-2 col-sm-6 mt-2 border p-4">
+                            <img
+                                class="w-100 mb-2"
+                                src="https://m.media-amazon.com/images/I/81Gphn97m9L._AC_SL1500_.jpg"
+                            />
+                            <h6>
+                                DELL Vostro 3515 Laptop - Ryzen 5 3450U, 16GB
+                                RAM,…
+                            </h6>
+                            <span class="text-danger"
+                                >Currently unavailable.</span
+                            >
+                            <a href="#" class="d-block text-decoration-none"
+                                >Delete</a
+                            >
+                            <a href="#" class="d-block text-decoration-none"
+                                >Add to list</a
+                            >
+                        </div>
+                        <div class="col-md-3 mx-2 col-sm-6 mt-2 border p-4">
+                            <img
+                                class="w-100 mb-2"
+                                src="https://m.media-amazon.com/images/I/81Gphn97m9L._AC_SL1500_.jpg"
+                            />
+                            <h6>
+                                DELL Vostro 3515 Laptop - Ryzen 5 3450U, 16GB
+                                RAM,…
+                            </h6>
+                            <span class="text-danger"
+                                >Currently unavailable.</span
+                            >
+                            <a href="#" class="d-block text-decoration-none"
+                                >Delete</a
+                            >
+                            <a href="#" class="d-block text-decoration-none"
+                                >Add to list</a
+                            >
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-3 col-sm-6 mx-2 border p-4">
+                            <img
+                                class="w-100 mb-2"
+                                src="https://m.media-amazon.com/images/I/81Gphn97m9L._AC_SL1500_.jpg"
+                            />
+                            <h6>
+                                DELL Vostro 3515 Laptop - Ryzen 5 3450U, 16GB
+                                RAM,…
+                            </h6>
+                            <span class="text-danger"
+                                >Currently unavailable.</span
+                            >
+                            <a href="#" class="d-block text-decoration-none"
+                                >Delete</a
+                            >
+                            <a href="#" class="d-block text-decoration-none"
+                                >Add to list</a
+                            >
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
+        <!--End Section Cart-->
+
+        <section id="sec2" class="mt-5">
+            <h5 class="fw-bold mx-5 mt-2 mb-3">
+                Customers who viewed items in your browsing history also viewed
+            </h5>
+            <div class="container">
+                <div class="row">
+                    <div class="card col-lg-3 col-md-4 border-0">
+                        <img
+                            class="card-img-top"
+                            src="../orders/images/71b60-HHxjL._AC_UL160_SR160,160_.jpg"
+                            alt="Card image cap"
+                        />
+                        <div class="card-body">
+                            <p class="card-text textf">
+                                Samsung T20 Android Tablet (4G + Wi-Fi) with
+                                10.4" WUXGA Display, 4GB RAM + 64GB ROM - Blue
+                            </p>
+                            <div class="product-rating">
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star-half-alt"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <span>10</span>
+                            </div>
+                            <p class="card-text m-0">EGP 15,777.00</p>
+                            <p class="card-text">
+                                Get it as soon
+                                <span class="fw-bold"> as Tomorrow, Sep 8</span>
+                                Fulfilled by Amazon - FREE Shipping on orders
+                                over EGP 450
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card col-lg-3 col-md-4 border-0">
+                        <img
+                            class="card-img-top"
+                            src="../orders/images/281i6m64KmUL._AC_UL160_SR160,160_.jpg"
+                            alt="Card image cap"
+                        />
+                        <div class="card-body">
+                            <p class="card-text textf">
+                                Samsung T20 Android Tablet (4G + Wi-Fi) with
+                                10.4" WUXGA Display, 4GB RAM + 64GB ROM - Blue
+                            </p>
+                            <div class="product-rating">
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star-half-alt"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <span>10</span>
+                            </div>
+                            <p class="card-text m-0">EGP 15,777.00</p>
+                            <p class="card-text">
+                                Get it as soon
+                                <span class="fw-bold"> as Tomorrow, Sep 8</span>
+                                Fulfilled by Amazon - FREE Shipping on orders
+                                over EGP 450
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 col-md-4 border-0">
+                        <img
+                            class="card-img-top"
+                            src="../orders/images/71b60-HHxjL._AC_UL160_SR160,160_.jpg"
+                            alt="Card image cap"
+                        />
+                        <div class="card-body">
+                            <p class="card-text textf">
+                                Samsung T20 Android Tablet (4G + Wi-Fi) with
+                                10.4" WUXGA Display, 4GB RAM + 64GB ROM - Blue
+                            </p>
+                            <div class="product-rating">
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star-half-alt"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <span>5.6 </span>
+                            </div>
+                            <p class="card-text m-0">EGP15,788.00</p>
+                            <p class="card-text">
+                                Get it as soon
+                                <span class="fw-bold"> as Tomorrow, Sep 8</span>
+                                Fulfilled by Amazon - FREE Shipping on orders
+                                over EGP 450
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card col-lg-3 col-md-4 border-0">
+                        <img
+                            class="card-img-top"
+                            src="../orders/images/6wFCdMNpwL._AC_UL160_SR160,160_.jpg"
+                            alt="Card image cap"
+                        />
+                        <div class="card-body">
+                            <p class="card-text textf">
+                                Samsung T20 Android Tablet (4G + Wi-Fi) with
+                                10.4" WUXGA Display, 4GB RAM + 64GB ROM - Blue
+                            </p>
+                            <div class="product-rating">
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star-half-alt"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <span>10</span>
+                            </div>
+                            <p class="card-text m-0">EGP15,777.00</p>
+                            <p class="card-text">
+                                Get it as soon
+                                <span class="fw-bold"> as Tomorrow, Sep 8</span>
+                                Fulfilled by Amazon - FREE Shipping on orders
+                                over EGP 450
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 col-md-4 border-0">
+                        <img
+                            class="card-img-top"
+                            src="../orders/images/71b60-HHxjL._AC_UL160_SR160,160_.jpg"
+                            alt="Card image cap"
+                        />
+                        <div class="card-body">
+                            <p class="card-text textf">
+                                Samsung T20 Android Tablet (4G + Wi-Fi) with
+                                10.4" WUXGA Display, 4GB RAM + 64GB ROM - Blue
+                            </p>
+                            <div class="product-rating">
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star-half-alt"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <span>10</span>
+                            </div>
+                            <p class="card-text m-0">EGP15,777.00</p>
+                            <p class="card-text">
+                                Get it as soon
+                                <span class="fw-bold"> as Tomorrow, Sep 8</span>
+                                Fulfilled by Amazon - FREE Shipping on orders
+                                over EGP 450
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 col-md-4 border-0">
+                        <img
+                            class="card-img-top"
+                            src="../orders/images/sum8w3fHJL._AC_UL160_SR160,160_.jpg"
+                            alt="Card image cap"
+                        />
+                        <div class="card-body">
+                            <p class="card-text textf">
+                                Samsung T20 Android Tablet (4G + Wi-Fi) with
+                                10.4" WUXGA Display, 4GB RAM + 64GB ROM - Blue
+                            </p>
+                            <div class="product-rating">
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star-half-alt"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <span>10</span>
+                            </div>
+                            <p class="card-text m-0">EGP15,777.00</p>
+                            <p class="card-text">
+                                Get it as soon
+                                <span class="fw-bold"> as Tomorrow, Sep 8</span>
+                                Fulfilled by Amazon - FREE Shipping on orders
+                                over EGP 450
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- </div> -->
+        </section>
+        <section id="sec2" class="border-top mt-5">
+            <h5 class="fw-bold mx-5 mt-2 mb-3">Related to items you viewed</h5>
+            <div class="container">
+                <div class="row">
+                    <div class="card col-lg-3 col-md-4 border-0">
+                        <img
+                            class="card-img-top"
+                            src="../orders/images/milkAC_UL160_SR160,160_.jpg"
+                            alt="Card image cap"
+                        />
+                        <div class="card-body">
+                            <p class="card-text textf">
+                                Juhayna Liquid full cream milk 1 liter, set of 6
+                            </p>
+                            <div class="product-rating">
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star-half-alt"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <span>4.6</span>
+                            </div>
+                            <p class="card-text m-0">EGP194.0</p>
+                        </div>
+                    </div>
+
+                    <div class="card col-lg-3 col-md-4 border-0">
+                        <img
+                            class="card-img-top"
+                            src="../orders/images/71b60-HHxjL._AC_UL160_SR160,160_.jpg"
+                            alt="Card image cap"
+                        />
+                        <div class="card-body">
+                            <p class="card-text textf">
+                                Samsung T20 Android Tablet (4G + Wi-Fi) with
+                                10.4" WUXGA Display, 4GB RAM + 64GB ROM - Blue
+                            </p>
+                            <div class="product-rating">
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star-half-alt"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <span>10</span>
+                            </div>
+                            <p class="card-text m-0">EGP15,777.00</p>
+                            <p class="card-text">
+                                Get it as soon
+                                <span class="fw-bold"> as Tomorrow, Sep 8</span>
+                                Fulfilled by Amazon - FREE Shipping on orders
+                                over EGP 450
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 col-md-4 border-0">
+                        <img
+                            class="card-img-top"
+                            src="../orders/images/sum8w3fHJL._AC_UL160_SR160,160_.jpg"
+                            alt="Card image cap"
+                        />
+                        <div class="card-body">
+                            <p class="card-text textf">
+                                Samsung T20 Android Tablet (4G + Wi-Fi) with
+                                10.4" WUXGA Display, 4GB RAM + 64GB ROM - Blue
+                            </p>
+                            <div class="product-rating">
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star-half-alt"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <span>10</span>
+                            </div>
+                            <p class="card-text m-0">EGP15,777.00</p>
+                            <p class="card-text">
+                                Get it as soon
+                                <span class="fw-bold"> as Tomorrow, Sep 8</span>
+                                Fulfilled by Amazon - FREE Shipping on orders
+                                over EGP 450
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card col-lg-3 col-md-4 border-0">
+                        <img
+                            class="card-img-top"
+                            src="../orders/images/71b60-HHxjL._AC_UL160_SR160,160_.jpg"
+                            alt="Card image cap"
+                        />
+                        <div class="card-body">
+                            <p class="card-text textf">
+                                Samsung T20 Android Tablet (4G + Wi-Fi) with
+                                10.4" WUXGA Display, 4GB RAM + 64GB ROM - Blue
+                            </p>
+                            <div class="product-rating">
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star-half-alt"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <span>10</span>
+                            </div>
+                            <p class="card-text m-0">EGP15,777.00</p>
+                            <p class="card-text">
+                                Get it as soon
+                                <span class="fw-bold"> as Tomorrow, Sep 8</span>
+                                Fulfilled by Amazon - FREE Shipping on orders
+                                over EGP 450
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 col-md-4 border-0">
+                        <img
+                            class="card-img-top"
+                            src="../orders/images/poL._AC_UL160_SR160,160_.jpg"
+                            alt="Card image cap"
+                        />
+                        <div class="card-body">
+                            <p class="card-text textf">
+                                Renol multipurpose cleaner 8 in 1 and degreaser-
+                                750 gram
+                            </p>
+                            <div class="product-rating">
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star-half-alt"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <span>10</span>
+                            </div>
+                            <p class="card-text m-0">EGP 58</p>
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 col-md-4 border-0">
+                        <img
+                            class="card-img-top"
+                            src="../orders/images/sum9FlL._AC_UL160_SR160,160_.jpg"
+                            alt="Card image cap"
+                        />
+                        <div class="card-body">
+                            <p class="card-text textf">
+                                Samsung T20 Android Tablet (4G + Wi-Fi) with
+                                10.4" WUXGA Display, 4GB RAM + 64GB ROM - Blue
+                            </p>
+                            <div class="product-rating">
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <i
+                                    class="fa-solid fa-star-half-alt"
+                                    style="color: #ffa41c"
+                                ></i>
+                                <span>10</span>
+                            </div>
+                            <p class="card-text m-0">EGP15,777.00</p>
+                            <p class="card-text">
+                                Get it as soon
+                                <span class="fw-bold"> as Tomorrow, Sep 8</span>
+                                Fulfilled by Amazon - FREE Shipping on orders
+                                over EGP 450
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- </div> -->
         </section>
         <footer>
             <!-- by eng.hamza mohamed -->
@@ -893,6 +1784,10 @@
             </div>
         </footer>
         <script src="../Assets/js/bootstrap.bundle.min.js"></script>
+        <script
+            src="https://kit.fontawesome.com/154d9ade40.js"
+            crossorigin="anonymous"
+        ></script>
         <script
             type="module"
             src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"

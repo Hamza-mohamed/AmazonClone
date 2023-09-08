@@ -85,8 +85,7 @@
 .cart:hover,
 .order,
 .order:hover,
-.nav-link.active,
-.navbar-nav .nav-link.show {
+.nav-link.active {
     color: #fff;
     font-weight: 600;
     letter-spacing: 1.2px;
@@ -144,7 +143,6 @@
     margin-bottom: 0;
 }
 .menu ul li {
-    padding: 8px 12px;
     border: 1px solid transparent;
     cursor: pointer;
 }
@@ -152,6 +150,9 @@
     border: 1px solid #fff;
 }
 .menu ul li a {
+    display: inline-block;
+    padding: 8px 12px;
+
     text-decoration: none;
     color: #fff;
     font-weight: 500;
@@ -170,7 +171,7 @@
 
 /**********category****************/
 .filter {
-    border-right: 1px solid #ccc;
+    border-right: 1px solid #cccccc;
 }
 
 .category-product img {
