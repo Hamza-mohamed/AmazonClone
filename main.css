@@ -8,14 +8,12 @@
       background-image: none;
       background-color: white;
 
-
     }
 
     .slider2-NextIcon:after {
       content: '>';
       font-size: 50px;
       color: black;
-
     }
 
     .slider2-PrevIcon:after {
@@ -27,3 +25,4 @@
     .btn-slider{
         width: 40px;
     }
+
