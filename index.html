@@ -16,150 +16,328 @@
 
 <body class="bg-body-secondary">
     <!--///////////////////////////////////// <nav>////////////////////////////////////////// -->
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="./Assets/images/nav-images/amzon-logo.png"
-                        width="120px" height="40px" /></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item location-item">
-                            <div class="d-flex">
-                                <div class="mt-2 me-1">
-                                    <ion-icon class="location" name="location-outline"></ion-icon>
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html"
+                        ><img
+                            src="./Assets/images/nav-images/amzon-logo.png"
+                            width="120px"
+                            height="40px"
+                    /></a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div
+                        class="collapse navbar-collapse"
+                        id="navbarNavDropdown"
+                    >
+                        <ul class="navbar-nav align-items-lg-center">
+                            <li class="nav-item location-item">
+                                <div class="d-flex">
+                                    <div class="mt-2 me-1">
+                                        <ion-icon
+                                            class="location"
+                                            name="location-outline"
+                                        ></ion-icon>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <p class="deliver">Deliver to</p>
+                                        <a
+                                            class="nav-link active address"
+                                            aria-current="page"
+                                            href="#"
+                                            >Egypt</a
+                                        >
+                                    </div>
                                 </div>
-                                <div class="d-flex flex-column">
-                                    <p class="deliver">Deliver to</p>
-                                    <a class="nav-link active address" aria-current="page" href="#">Egypt</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="nav-item search">
-                            <div class="container-fluid">
-                                <form class="d-flex align-items-md-center" role="search">
-                        <li class="nav-item dropdown all-category-search">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                All
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a class="dropdown-item" href="#">All Category</a>
+                            </li>
+                            <ul class="navbar-nav search-bar">
+                                <li class="nav-item">
+                                    <form role="search">
+                                        <input
+                                            class="form-control search-input align-items-center"
+                                            type="search"
+                                            placeholder="          Search"
+                                            aria-label="Search"
+                                        />
+                                    </form>
                                 </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">Amazon Devices</a>
+                                <li
+                                    class="nav-item dropdown all-category-search"
+                                >
+                                    <a
+                                        class="nav-link dropdown-toggle"
+                                        href="#"
+                                        role="button"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false"
+                                    >
+                                        All
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                >All Category</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                >Amazon Devices</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                >Amazon Fashion</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                >Amazon Warehouse</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                >Baby</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                >Books</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                >Sports</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                >Software</a
+                                            >
+                                        </li>
+                                    </ul>
                                 </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">Amazon Fashion</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">Amazon Warehouse</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">Baby</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">Books</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">Sports</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">Software</a>
+                                <li class="nav-item">
+                                    <ion-icon
+                                        class="serch-icon d-block"
+                                        name="search-outline"
+                                    ></ion-icon>
                                 </li>
                             </ul>
-                        </li>
-                        <input class="form-control me-2" type="search" placeholder="          Search"
-                            aria-label="Search" />
-                        <ion-icon class="serch-icon" name="search-outline"></ion-icon>
-                        </form>
+                            <li class="nav-item dropdown">
+                                <a
+                                    class="nav-link dropdown-toggle langugae-location"
+                                    href="#"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    <img
+                                        src="./Assets/images/nav-images/egypt-flag.svg"
+                                        width="25px"
+                                    />
+                                    EN
+                                </a>
+                                <ul class="dropdown-menu p-2">
+                                    <li>
+                                        <input
+                                            type="radio"
+                                            id="arabic"
+                                            name="languge"
+                                        />
+                                        <label for="arabic">العربية- AR</label>
+                                    </li>
+                                    <hr />
+                                    <li>
+                                        <input
+                                            type="radio"
+                                            id="english"
+                                            name="languge"
+                                        />
+                                        <label for="english"
+                                            >English - EN</label
+                                        >
+                                    </li>
+                                    <p>
+                                        <a href="#">Learn more</a>
+                                    </p>
+                                    <hr />
+                                    <p>
+                                        <img
+                                            src="./Assets/images/nav-images/egypt-flag.svg"
+                                            width="25px"
+                                        />
+                                        You are shopping on Amazon.eg
+                                    </p>
+                                    <p>
+                                        <a href="#">Change country/ region.</a>
+                                    </p>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown nav-account">
+                                <a
+                                    class="nav-link dropdown-toggle"
+                                    href="#"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    <span class="account-lists">
+                                        <span class="hello"
+                                            >Hello, sign in<br /></span
+                                        >Account & Lists
+                                    </span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a
+                                            class="dropdown-item drop-account shadow"
+                                            href="./login-page/login.html"
+                                            >Sign in</a
+                                        >
+                                        <p class="register">
+                                            New customer?
+                                            <a
+                                                href="./register-page/register.html"
+                                                >Start here.</a
+                                            >
+                                        </p>
+                                        <hr />
+                                    </li>
+                                    <li>
+                                        <p
+                                            class="border-3 fw-bold d-inline-block"
+                                        >
+                                            Your Lists
+                                        </p>
+                                        <p class="fw-bold mb-0">Your Account</p>
+                                        <a
+                                            href="./account-page/account.html"
+                                            class="text-decoration-none text-dark"
+                                        >
+                                            Your Account
+                                        </a>
+                                        <br />
+                                        <a
+                                            href="./orders/order.html"
+                                            class="text-decoration-none text-dark"
+                                        >
+                                            Your Orders
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link order"
+                                    href="./orders/order.html"
+                                    >Orders</a
+                                >
+                            </li>
+                            <li class="nav-item cart-container d-flex">
+                                <a href="./cart-page/cart.html">
+                                    <span>4</span>
+                                    <img
+                                        class="mb-2"
+                                        src="./Assets/images/nav-images/cart.png"
+                                    />
+                                    <a
+                                        href="./cart-page/cart.html"
+                                        class="nav-link cart"
+                                        >Cart</a
+                                    >
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle langugae-location" href="#" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="./Assets/images/nav-images/egypt.png" width="25px" />
-                        EN
-                    </a>
-                    <ul class="dropdown-menu p-2">
-                        <li>
-                            <input type="radio" id="arabic" name="languge" />
-                            <label for="arabic">العربية- AR</label>
-                        </li>
-                        <hr />
-                        <li>
-                            <input type="radio" id="english" name="languge" />
-                            <label for="english">English - EN</label>
-                        </li>
-                        <p>
-                            <a href="#">Learn more</a>
-                        </p>
-                        <hr />
-                        <p>
-                            <img src="./Assets/images/nav-images/egypt.png" width="25px" />
-                            You are shopping on Amazon.eg
-                        </p>
-                        <p>
-                            <a href="#">Change country/ region.</a>
-                        </p>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown nav-account">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        <span class="account-lists">
-                            <span class="hello">Hello, sign in<br /></span>Account & Lists
-                        </span>
+            </nav>
+            <div class="search-bar-meduim d-flex d-lg-none">
+                <div class="all-category-search">
+                    <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                    >
+                        All
                     </a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a class="dropdown-item" href="./account-page/account.html">Account</a>
+                            <a class="dropdown-item" href="#">All Category</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="./login-page/login.html">Sign in</a>
+                            <a class="dropdown-item" href="#">Amazon Devices</a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="./register-page/register.html">Register</a>
+                            <a class="dropdown-item" href="#">Amazon Fashion</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#"
+                                >Amazon Warehouse</a
+                            >
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Baby</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Books</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Sports</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Software</a>
                         </li>
                     </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link order" href="./orders/order.html">Orders</a>
-                </li>
-                <li class="nav-item cart-container d-flex">
-                    <a href="./cart-page/cart.html">
-                        <span>4</span>
-                        <img class="mb-2" src="./Assets/images/nav-images/cart.png" />
-                        <a href="./cart-page/cart.html" class="nav-link cart">Cart</a>
-                    </a>
-                </li>
+                </div>
+                <div class="flex-grow-1 h-100">
+                    <form role="search">
+                        <input
+                            class="form-control seearch-input"
+                            type="search"
+                            placeholder="Search"
+                            aria-label="Search"
+                        />
+                    </form>
+                </div>
+                <div class="h-100">
+                    <ion-icon
+                        class="serch-icon"
+                        name="search-outline"
+                    ></ion-icon>
+                </div>
+            </div>
+            <div class="menu">
+                <ul class="list-unstyled d-flex flex-row">
+                    <li><a href="#">All</a></li>
+                    <li><a href="#">Today's Deals</a></li>
+                    <li>
+                        <a href="./category-page/category.html"
+                            >Mobile Phones</a
+                        >
+                    </li>
+                    <li><a href="#">Electronics</a></li>
+                    <li><a href="#">Application</a></li>
+                    <li><a href="#">Fashion</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Video Games</a></li>
+                    <li><a href="#">Toy & Games</a></li>
+                    <li><a href="#">Grocery</a></li>
+                    <li><a href="./help-page/help.html">Help</a></li>
                 </ul>
             </div>
-            </div>
-        </nav>
-        <div class="menu">
-            <ul class="list-unstyled d-flex flex-row">
-                <li><a href="#">All</a></li>
-                <li><a href="#">Today's Deals</a></li>
-                <li>
-                    <a href="./category-page/category.html">Mobile Phones</a>
-                </li>
-                <li><a href="#">Electronics</a></li>
-                <li><a href="#">Application</a></li>
-                <li><a href="#">Fashion</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Video Games</a></li>
-                <li><a href="#">Toy & Games</a></li>
-                <li><a href="#">Grocery</a></li>
-                <li><a href="./help-page/help.html">Help</a></li>
-            </ul>
-        </div>
-    </header>
+        </header>
     <!--/////////////////////////////////////<end nav>////////////////////////////////////////// -->
 
 
