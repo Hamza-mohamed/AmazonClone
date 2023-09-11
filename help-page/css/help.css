@@ -14,21 +14,19 @@
 }
 
 .div {
-    border-left: 1px solid #f2f2f2
+    border-left: 1px solid #f2f2f2;
 }
 
 .sec11 {
-
     -moz-box-shadow: 0 4px 6px -6px #1e3360;
     box-shadow: 0 4px 6px -6px #1e3360;
-
 }
 
 .info {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     border-radius: 8px;
     border: 1px solid gainsboro;
-    border-left: 20px #1495A9 solid;
+    border-left: 20px #1495a9 solid;
 }
 
 .info i {
@@ -37,32 +35,26 @@
 }
 
 .ques {
-    color: #FFFFFF
+    color: #ffffff;
 }
 
 .first {
     border-radius: 5px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     padding: 20px;
     padding: 20px;
     color: #000;
-
-
 }
-.first:hover{
+.first:hover {
     background-color: #b5b4b4;
-
 }
 #sec1 img {
     width: 20%;
 }
 
-
-   
-
 /* ////////////////////sec3/////////////////// */
 #sec3 {
-    background-color: #F7FAFA;
+    background-color: #f7fafa;
 }
 
 #sec3 label {
@@ -72,32 +64,26 @@
 #sec3 ul {
     list-style-type: none;
 
-    background-color: #F7FAFA;
-
+    background-color: #f7fafa;
 }
 
 #sec3 li {
     border: 1px solid none;
-    background-color: #F7FAFA;
-
-
+    background-color: #f7fafa;
 }
 #sec3 li:hover {
     border: 1px solid none;
     border-radius: 5px;
     background-color: #d7d6d6;
     text-align: left;
-
-
 }
-#sec3 li> button {
+#sec3 li > button {
     border: none;
     color: rgb(0, 0, 0);
     font-weight: bolder;
     font-size: 16px;
     padding: 5px;
     background-color: inherit;
-
 }
 
 #sec3 li:active {
@@ -116,14 +102,11 @@
     font-size: 14px;
     margin-left: 20px;
     padding-top: 10px;
-
 }
-
 
 #last,
 #last2,
 #last3 {
-
     border: 1px solid rgb(186, 186, 186);
     padding: 10px 30px;
     border-radius: 10px;
@@ -134,42 +117,36 @@
 #last:hover,
 #last2:hover,
 #last3:hover {
-    background-color: #F7FAFA;
-
+    background-color: #f7fafa;
 }
 .first2 {
     border-radius: 5px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     /* padding: 20px; */
     border: #b5b4b4 1px solid;
     padding: 10px;
     /* margin-top: 10px; */
     color: #000;
-
-
 }
-.first2:hover{
+.first2:hover {
     background-color: #dddddd;
-
 }
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {  
+@media (min-width: 576px) {
 }
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {  
-	/* html{
+@media (min-width: 768px) {
+    /* html{
 		font-size: 16px;
 	} */
-    #sec3 li{
+    #sec3 li {
         border: none;
-
     }
 }
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
+@media (min-width: 992px) {
 }
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  
-	
+@media (min-width: 1200px) {
 }
