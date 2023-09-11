@@ -135,6 +135,8 @@
 }
 .search-bar-meduim .serch-icon {
     margin-bottom: -7px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .dropdown-menu {
